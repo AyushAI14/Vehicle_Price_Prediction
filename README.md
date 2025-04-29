@@ -29,4 +29,7 @@ cd Vehicle_Price_Prediction
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
-Run app.py 
+Run app.py
+```
+## Web app
+![Image](https://github.com/user-attachments/assets/07d20293-0821-41da-af4a-c27be434306d)
