@@ -1,0 +1,82 @@
+/* whole Page */
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Nice blue gradient */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* heading */
+h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* form css */
+form {
+    background: rgba(255, 255, 255, 0.9); /* semi-transparent */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover on form */
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* input fields */
+input[type="text"],
+input[type="number"] {
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* focus on inputs */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.4);
+}
+
+/* submit button */
+button {
+    padding: 14px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.2s ease;
+}
+
+/* hover on button */
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* prediction output */
+h3 {
+    margin-top: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
