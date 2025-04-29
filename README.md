@@ -26,5 +26,7 @@ Predicting the selling price of vehicles using machine learning models trained o
 ```bash
 git clone https://github.com/AyushAI14/Vehicle_Price_Prediction.git
 cd Vehicle_Price_Prediction
+python3 -m venv env
+source env/bin/activate
 pip install -r requirements.txt
 Run app.py 
