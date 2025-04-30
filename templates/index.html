@@ -9,7 +9,10 @@
 <body>
 
     <h2>Enter Car Details to Predict Price</h2>
-
+    <button type="button" onclick="fillExample()">Try Example</button>
+    {% if predicted_price is not none %}
+    <h3>Approx Predicted Price: ${{ predicted_price }}</h3>
+    {% endif %}
     <form action="/predict" method="post">
         <input type="text" name="make" placeholder="Make" required><br>
         <input type="text" name="model" placeholder="Model" required><br>
@@ -28,9 +31,28 @@
         <button type="submit">Submit</button>
     </form>
 
-    {% if predicted_price is not none %}
-        <h3>Approx Predicted Price: ${{ predicted_price }}</h3>
-    {% endif %}
+
 
 </body>
+
+
+<script>
+    function fillExample() {
+        document.querySelector('input[name="make"]').value = "Ford";
+        document.querySelector('input[name="model"]').value = "Mustang Mach-E";
+        document.querySelector('input[name="year"]').value = 2023;
+        document.querySelector('input[name="engine"]').value = "c";
+        document.querySelector('input[name="cylinders"]').value = 0.0;
+        document.querySelector('input[name="fuel"]').value = "Electric";
+        document.querySelector('input[name="mileage"]').value = 11.0;
+        document.querySelector('input[name="transmission"]').value = "1-Speed Automatic";
+        document.querySelector('input[name="trim"]').value = "GT";
+        document.querySelector('input[name="body"]').value = "SUV";
+        document.querySelector('input[name="doors"]').value = 4.0;
+        document.querySelector('input[name="exterior_color"]').value = "Black";
+        document.querySelector('input[name="interior_color"]').value = "Black";
+        document.querySelector('input[name="drivetrain"]').value = "All-wheel Drive";
+    }
+</script>
+
 </html>
